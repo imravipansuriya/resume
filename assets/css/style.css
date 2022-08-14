@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'timesbold_italic';
+  src: url('../font/times_new_roman_bold_italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'times_new_roman_cyrbold';
+  src: url('../font/times_new_roman_bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'times_new_romanitalic';
+  src: url('../font/times_new_roman_italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'times_new_roman_cyrregular';
+  src: url('../font/times_new_roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFA;
+  font-family: 'times_new_roman_cyrregular';
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.page {
+  width: 21cm;
+  /* min-height: 29.7cm; */
+  padding: 1cm;
+  margin: 1cm auto;
+  border: 1px #D3D3D3 solid;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.subpage {
+  /* padding: 1cm; */
+  border: 1px #d6d6d6 solid;
+  /* height: 256mm; */
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
+.left-items {
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+.right-items{
+  padding: 20px;
+}
+.name h1 {
+  font-size: 24px;
+  font-family: 'times_new_roman_cyrbold';
+}
+
+.sub-items ul li a img {
+  width: 15px;
+}
+
+.sub-items ul li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+.sub-items ul li:hover {
+  margin-left: 5px;
+}
+
+.sub-items ul li h6 {
+  margin: 0;
+  flex: 0 0 40%;
+  font-size: 14px;
+}
+
+.sub-items ul {
+  padding: 0;
+}
+
+.items-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  margin-bottom: 10px;
+}
+
+.items-title h3 {
+  font-size: 16px;
+  font-family: 'times_new_roman_cyrbold';
+}
+
+.sub-items ul li h6 {
+  margin: 0;
+  flex: 0 0 40%;
+  font-size: 14px;
+}
+
+.items-title h3 {
+  font-size: 16px;
+}
+
+.items-title h2 {
+  font-size: 16px;
+  margin: 0;
+  font-family: 'times_new_roman_cyrbold';
+}
+
+.items-title h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.sub-items-title h3 {
+  font-size: 16px;
+  font-family: 'times_new_roman_cyrbold';
+  margin: 0;
+}
+
+.sub-items-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+
+.experience-box .sub-items ul,
+.items-box.technical-skills .sub-items ul,
+.items-box.skills-abilities .sub-items ul,
+.items-box.interest-hobbies .sub-items ul,
+.experience-box .sub-items ul {
+  padding-left: 20px;
+}
+
+.items-box.technical-skills .sub-items ul li,
+.items-box.interest-hobbies .sub-items ul li,
+.experience-box .sub-items ul li,
+.experience-box .sub-items ul li,
+.items-box.skills-abilities .sub-items ul li {
+  display: list-item;
+  list-style: circle;
+}
+
+.items-box.certificte .sub-items ul li p {display: flex;flex-direction: column;gap: 10px;}
