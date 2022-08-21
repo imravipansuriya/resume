@@ -52,9 +52,14 @@ body {
 .subpage {
   /* padding: 1cm; */
   border: 1px #d6d6d6 solid;
+  position: relative;
   /* height: 256mm; */
 }
-
+.board-logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 @page {
   size: A4;
   margin: 0;
@@ -79,6 +84,7 @@ body {
 
 .right-items{
   padding: 20px 20px 20px 0;
+  position: relative;
 }
 .name h1 {
   font-size: 24px;
